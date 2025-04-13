@@ -1,15 +1,23 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section className="text-center max-w-3xl mx-auto">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="text-center max-w-3xl mx-auto"
+    >
       <p className="text-lime-400 text-sm mb-2">Hi, my name is</p>
       <h1 className="text-5xl font-bold text-white mb-4">Mason Wester.</h1>
       <h2 className="text-3xl text-gray-400 font-semibold mb-6">
         I build clean, data-driven software.
       </h2>
       <p className="text-gray-400 mb-8">
-        I'm a developer focused on building practical, accessible, and performance-oriented applications. I love working with databases, web technologies, and solving real-world problems through code.
+        I'm a developer focused on building practical, accessible, and performance-oriented
+        applications. I love working with databases, web technologies, and solving real-world
+        problems through code.
       </p>
       <a
         href="/projects"
@@ -17,6 +25,6 @@ export default function About() {
       >
         View My Work
       </a>
-    </section>
+    </motion.div>
   );
 }
