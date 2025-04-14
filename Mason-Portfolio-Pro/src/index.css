@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-gray-950 text-white font-sans;
+  @apply font-sans bg-gray-950 text-white;
+}
+
+h1, h2, h3, h4 {
+  @apply font-bold text-white tracking-tight;
+}
+
+p {
+  @apply text-gray-400 text-base;
+}
+
+a {
+  @apply transition-colors;
+}
+
+a:hover {
+  @apply text-lime-300;
+}
+
+button {
+  @apply px-5 py-2 rounded border border-lime-400 text-lime-300 hover:bg-lime-400 hover:text-gray-950 transition font-semibold;
 }

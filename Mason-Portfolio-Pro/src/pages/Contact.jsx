@@ -32,7 +32,7 @@ function Contact() {
             <p>
               🔗 LinkedIn:{' '}
               <a
-                href="https://www.linkedin.com/in/masonwester"
+                href="https://www.linkedin.com/in/mason-wester/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-lime-400 transition-colors"
