@@ -1,20 +1,22 @@
 import React from 'react';
-import ScrollReveal from '../Components/ScrollReveal';
-import AnimatedPageWrapper from '../Components/AnimatedPageWrapper';
+import { motion } from 'framer-motion';
+import ParticlesBackground from '../Components/ParticlesBackground';
 
-function About() {
+export default function About() {
   return (
-    <AnimatedPageWrapper>
-      <ScrollReveal>
-        <main className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 py-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">About Me</h1>
-          <p className="text-gray-400 text-base sm:text-lg">
-            I'm a developer passionate about building user-focused, performance-driven applications using modern tools and best practices.
-          </p>
-        </main>
-      </ScrollReveal>
-    </AnimatedPageWrapper>
+    <section className="relative overflow-hidden">
+      <ParticlesBackground />
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="relative z-10 max-w-4xl mx-auto text-center px-4 py-16"
+      >
+        <h1 className="text-4xl font-bold text-white mb-4">About Me</h1>
+        <p className="text-gray-400 text-lg">
+          I'm a developer passionate about building user-focused, performance-driven applications using modern tools and best practices.
+        </p>
+      </motion.div>
+    </section>
   );
 }
-
-export default About;
