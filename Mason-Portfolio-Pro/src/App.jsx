@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { AnimatePresence } from 'framer-motion';
 
 import Layout from './Components/Layout';
+import ScrollToTop from './Components/ScrollToTop';
+
 import About from './pages/About';
 import Skills from './pages/Skills';
-import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import NotFound from './pages/NotFound';
 
@@ -33,6 +35,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AnimatedRoutes />
     </Router>
   );
