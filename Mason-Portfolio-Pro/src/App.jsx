@@ -4,6 +4,7 @@ import Layout from './Components/Layout';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Skills from './pages/Skills';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="skills" element={<Skills />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>

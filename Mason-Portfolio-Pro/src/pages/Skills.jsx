@@ -19,7 +19,7 @@ function Skills() {
           {techStack.map((tech) => (
             <span
               key={tech}
-              className="bg-gray-800 text-white px-4 py-2 rounded-xl text-sm font-medium border border-lime-400 shadow-sm"
+              className="bg-gray-800 text-white px-4 py-2 rounded-xl text-sm font-medium border border-lime-400 shadow-sm hover:scale-105 hover:border-lime-300 transition-transform duration-200"
             >
               {tech}
             </span>
