@@ -12,7 +12,7 @@ function Contact() {
         <div className="space-y-4 text-lime-300 text-base sm:text-lg">
           <p>
             📧 Email:{' '}
-            <a href="mailto:masonwester21@gmail.com" className="underline hover:text-lime-400">
+            <a href="mailto:masonwester21@gmail.com" className="underline hover:text-lime-400 transition-colors">
               masonwester21@gmail.com
             </a>
           </p>
@@ -22,7 +22,7 @@ function Contact() {
               href="https://github.com/MLWester"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-lime-400"
+              className="underline hover:text-lime-400 transition-colors"
             >
               github.com/MLWester
             </a>
@@ -33,7 +33,7 @@ function Contact() {
               href="https://www.linkedin.com/in/masonwester"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-lime-400"
+              className="underline hover:text-lime-400 transition-colors"
             >
               linkedin.com/in/masonwester
             </a>
