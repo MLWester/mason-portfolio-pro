@@ -4,18 +4,15 @@ import ScrollReveal from '../Components/ScrollReveal';
 function Contact() {
   return (
     <ScrollReveal>
-      <section className="max-w-3xl mx-auto text-center px-4 py-20">
-        <h1 className="text-4xl font-bold text-white mb-4">Let’s Connect</h1>
-        <p className="text-gray-400 mb-8 text-lg">
+      <main className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8 py-20">
+        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Let’s Connect</h1>
+        <p className="text-gray-400 mb-8 text-base sm:text-lg">
           If you're looking for a reliable, driven developer who can turn ideas into clean, efficient, and scalable software — I'm ready to contribute.
         </p>
-        <div className="space-y-4 text-lime-300 text-lg">
+        <div className="space-y-4 text-lime-300 text-base sm:text-lg">
           <p>
             📧 Email:{' '}
-            <a
-              href="mailto:masonwester21@gmail.com"
-              className="underline hover:text-lime-400"
-            >
+            <a href="mailto:masonwester21@gmail.com" className="underline hover:text-lime-400">
               masonwester21@gmail.com
             </a>
           </p>
@@ -42,7 +39,7 @@ function Contact() {
             </a>
           </p>
         </div>
-      </section>
+      </main>
     </ScrollReveal>
   );
 }
